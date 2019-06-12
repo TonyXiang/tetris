@@ -1,0 +1,132 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+body{
+    position: relative;
+    overflow: hidden;
+    background: rgba(31, 31, 31, 0.8);
+}
+#Tetris{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid #607D8B;*/
+    /*transform: scale(.5);*/
+}
+
+@media screen and (min-width: 769px){
+    #alert{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height:100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    #alert .outer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5rem;
+        height: 5rem;
+        transform: translate(-50%, -50%);
+        background: #625cbf;
+        border-radius: 5rem;
+    }
+    #alert .outer .title{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        font-size: .5rem;
+        color: #ffffff;
+    }
+    #alert .outer .content{
+        position: absolute;
+        top: 2rem;
+        padding: 0 .2rem;
+        min-height: 1rem;
+        width: 4.6rem;
+        line-height: .4rem;
+        text-align: center;
+        font-size: .3rem;
+        color: #ffffff;
+    }
+    #alert .outer .btn{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        font-size: .5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    #alert{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height:100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    #alert .outer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10rem;
+        height: 10rem;
+        transform: translate(-50%, -50%);
+        background: #625cbf;
+        border-radius: 5rem;
+    }
+    #alert .outer .title{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+    #alert .outer .content{
+        position: absolute;
+        top: 4rem;
+        padding: 0 .4rem;
+        min-height: 2rem;
+        line-height: .8rem;
+        text-align: center;
+        font-size: .6rem;
+        color: #ffffff;
+        width: 9.2rem;
+    }
+    #alert .outer .btn{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        font-size: 1rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
