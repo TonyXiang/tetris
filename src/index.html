@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" /><!-- 禁用自动识别电话号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 强制全屏 -->
+    <meta name="msapplication-tap-highlight" content="no" /><!-- 禁用点击高光效果 -->
+
+    <link type="text/css" rel="stylesheet" href="Tetris.css">
+</head>
+<body>
+    <div style="touch-action: none;">
+        <canvas id="Tetris" width="320" height="480"></canvas>
+    </div>
+    <div id="alert">
+        <div class="outer">
+            <div class="title">俄罗斯方块</div>
+            <div class="content"> ← → 控制左右方向，↑旋转方块，↓快速下降</div>
+            <div class="btn">开始游戏</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="zepto.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>
